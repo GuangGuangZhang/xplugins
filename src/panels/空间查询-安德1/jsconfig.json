@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        // "target": "es5",
+        "target": "es2017",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./",
+        "paths": {
+            "*": [
+                "types/*",
+            ],
+            "@/*": [
+                "src/*" //避免@作为路径别名跳转问题
+            ]
+        },
+    },
+    "exclude": [ //提高idea性能
+        "node_modules",
+        "dist",
+        "build",
+        "lib",
+        "test"
+    ]
+}

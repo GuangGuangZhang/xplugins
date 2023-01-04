@@ -1,0 +1,91 @@
+[
+  {
+    "key": "map",
+    "label": "查询对象",
+    "value": [],
+    "placeholder": [
+      "请输入条件",
+      "按钮名称",
+      "请选择标记"
+    ],
+    "description": "条件输入规范： 孪生体分类：[twinType=孪生体分类名称]，孪生体属性：[userData/DATA/属性名=属性值]，孪生体ID：#孪生体ID，多个条件中间可以用\"&&\"（且）和\"||\"（或）",
+    "hidden": false,
+    "readonly": false,
+    "required": false,
+    "prefix": "",
+    "suffix": "",
+    "suffix_icon": "",
+    "type": "multiple-selector-text-attachment"
+  },
+  {
+    "key": "radius",
+    "label": "搜索半径",
+    "value": 20,
+    "placeholder": "",
+    "description": "",
+    "hidden": false,
+    "readonly": false,
+    "required": false,
+    "prefix": "",
+    "suffix": "米",
+    "max": 100000000000,
+    "min": 0,
+    "step": 1,
+    "type": "number"
+  },
+  {
+    "label": "效果配置",
+    "key": "collapse",
+    "value": true,
+    "description": "",
+    "prefix": "",
+    "suffix": "",
+    "type": "collapse",
+    "groups": [
+      {
+        "key": "effect",
+        "label": "",
+        "value": [
+          {
+            "type": "effect1",
+            "value": "fadeIn",
+            "label": "出场效果"
+          },
+          {
+            "type": "effect2",
+            "value": "x",
+            "label": "出场排序"
+          },
+          {
+            "type": "effect3",
+            "value": "Quartic.In",
+            "label": "出场插值"
+          },
+          {
+            "type": "effect4",
+            "value": "fadeOut",
+            "label": "离场效果"
+          },
+          {
+            "type": "effect5",
+            "value": "minusX",
+            "label": "离场排序"
+          },
+          {
+            "type": "effect6",
+            "value": "Quartic.Out",
+            "label": "离场插值"
+          }
+        ],
+        "description": "",
+        "placeholder": "",
+        "hidden": false,
+        "readonly": false,
+        "required": false,
+        "prefix": "",
+        "suffix": "",
+        "type": "effect"
+      }
+    ]
+  }
+]

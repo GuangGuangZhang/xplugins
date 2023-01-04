@@ -1,0 +1,55 @@
+{
+  "condition": {
+    "name": "园区",
+    "where": "classType",
+    "classType": "Campus"
+  },
+  "config": {
+    "collapse": true,
+    "map": {
+      "condition": {
+        "uid": "CA07BA945E70000184CD123CB0581FF1",
+        "name": "摄像头",
+        "type": 1
+      },
+      "value": "视频监控",
+      "decorators": [
+        "视频监控"
+      ],
+      "key": "摄像头111"
+    },
+    "radius": 200,
+    "effect": [
+      {
+        "type": "effect1",
+        "value": "fadeIn",
+        "label": "出场效果"
+      },
+      {
+        "type": "effect2",
+        "value": "x",
+        "label": "出场排序"
+      },
+      {
+        "type": "effect3",
+        "value": "Quartic.In",
+        "label": "出场插值"
+      },
+      {
+        "type": "effect4",
+        "value": "fadeOut",
+        "label": "离场效果"
+      },
+      {
+        "type": "effect5",
+        "value": "minusX",
+        "label": "离场排序"
+      },
+      {
+        "type": "effect6",
+        "value": "Quartic.Out",
+        "label": "离场插值"
+      }
+    ]
+  }
+}

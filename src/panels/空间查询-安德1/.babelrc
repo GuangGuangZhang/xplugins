@@ -1,0 +1,23 @@
+{
+  "compact": false,
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-classes"
+  ],
+  "sourceType": "unambiguous",
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": 60,
+          // "edge": 13,
+          // "firefox": 50
+          "esmodules": true,
+          "node": true
+        }
+      }
+    ]
+  ]
+}

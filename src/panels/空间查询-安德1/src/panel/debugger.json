@@ -6,7 +6,7 @@
   },
   "config": {
     "collapse": true,
-    "map": {
+    "map": [{
       "condition": {
         "uid": "CA07BA945E70000184CD123CB0581FF1",
         "name": "摄像头",
@@ -17,7 +17,7 @@
         "视频监控"
       ],
       "key": "摄像头111"
-    },
+    }],
     "radius": 200,
     "effect": [
       {

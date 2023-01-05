@@ -1,7 +1,7 @@
 import PanelPlugin from "@thingjs-x/xplugin-core/dist/plugin/panel/PanelPlugin";
 import IndexVue from './index.vue'
-import {ThingJSLib} from "./controler/ThingJSLib";
-import {manager} from "./controler/Manager";
+import { ThingJSLib } from "./controler/ThingJSLib";
+import { manager } from "./controler/Manager";
 
 export default class extends PanelPlugin {
 
@@ -51,7 +51,6 @@ export default class extends PanelPlugin {
         valueArr.forEach((_item, index) => {
             const nearbyDevices = xHostObject.nearbyDevices[index];
             if (nearbyDevices.length) {
-                widget.$children[0].objectOutLineColor(nearbyDevices, false);
                 nearbyDevices.forEach(nearbyDevice => {
                     const marker = ThingJSLib.getMark(nearbyDevice, xHostObject.curEffect[index]);
                     if (marker) {

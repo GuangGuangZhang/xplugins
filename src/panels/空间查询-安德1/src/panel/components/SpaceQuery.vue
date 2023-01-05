@@ -138,26 +138,8 @@ export default {
       }
     },
 
-    /**
-     * @description 显示隐藏设备勾边颜色
-     * @param { boolean } bool 是否在查询范围内
-     * @param { Array } objects 显示或者隐藏勾边的对象
-     */
-    objectOutLineColor(objects, bool) {
-      if (objects.length) {
-        objects.forEach(object => {
-          if (bool) {
-            object.style.outlineColor = '#FE8000';
-          } else {
-            object.style.outlineColor = null;
-          }
-        });
-      }
-    },
-
     // 创建并带出场效果显示标记
     createDecoratorAndShow(queryResult, obj, index, curSearchPurpose) {
-      this.objectOutLineColor(queryResult, true);
       const {userConfig} = this;
       const nearbyDevices = [];
       const curEffect = this.effectArr[index] || '_default_'; // 标记名称
@@ -229,7 +211,6 @@ export default {
           });
         }
       });
-      this.objectOutLineColor(nearbyDevices, false);
       if (oldDevicesIds) {
         obj.nearbyDevices[index] = obj.nearbyDevices[index].filter(v => !oldDevicesIds.includes(v.id));
       } else {

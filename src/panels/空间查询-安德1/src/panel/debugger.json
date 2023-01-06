@@ -8,17 +8,17 @@
     "collapse": true,
     "map": [{
       "condition": {
-        "uid": "CA07BA945E70000184CD123CB0581FF1",
+        "uid": "CA10D739E1500001974863D015C018C8",
         "name": "摄像头",
         "type": 1
       },
-      "value": "视频监控",
+      "value": "数据面板-视频窗口-安德",
       "decorators": [
-        "视频监控"
+        "数据面板-视频窗口-安德"
       ],
       "key": "摄像头111"
     }],
-    "radius": 200,
+    "radius": 20,
     "effect": [
       {
         "type": "effect1",

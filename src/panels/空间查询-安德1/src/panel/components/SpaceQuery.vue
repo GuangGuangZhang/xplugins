@@ -1,5 +1,5 @@
 <template>
-  <div class=".space-query-ander-warp">
+  <div class="space-query-ander-warp">
     <div class="space-query-ad" v-for="(item, i) in deviceArr" :key="i">
       <div class="title-info">查找附近的
         <div>{{ item }}</div>
@@ -246,7 +246,7 @@ export default {
 }
 
 .space-query-ander-warp .space-query-ad .title-info > div {
-  font-size: 18px;
+  font-size: 14px;
   margin-left: 5px;
 }
 

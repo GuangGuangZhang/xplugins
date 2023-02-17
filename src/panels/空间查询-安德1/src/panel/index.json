@@ -2,7 +2,7 @@
   {
     "key": "map",
     "label": "查询对象",
-    "value": [],
+    "value": {},
     "placeholder": [
       "请输入条件",
       "按钮名称",

@@ -12,6 +12,12 @@ export default class extends PanelPlugin {
     onActivate(xHostObject, widget) {
         if (this.config) {
             const config = JSON.parse(JSON.stringify(this.config));
+            // 如config.map为对象，将其转换为数组
+            if (!Array.isArray(config.map) && config.map !== {}) {
+                config.map = [config.map];
+            } else if (!Array.isArray(config.map) && config.map === {}) {
+                config.map = [];
+            }
             config.effectData = manager.initEffectData(config.effect);
             widget.$children[0].userConfig = config;
             if (config.map.length) {
